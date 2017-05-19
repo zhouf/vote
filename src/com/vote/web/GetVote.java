@@ -77,7 +77,7 @@ public class GetVote extends HttpServlet {
 		response.setCharacterEncoding("utf-8");
 		PrintWriter out = response.getWriter();
 		
-		out.println("vote finished!" + retVal);
+		out.print("vote finished!" + retVal);
 		out.flush();
 		out.close();
 	}
