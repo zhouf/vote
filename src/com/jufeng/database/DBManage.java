@@ -117,7 +117,6 @@ public class DBManage {
 	 * @return
 	 */
 	public static int doUpdate(Connection conn, String sql) {
-		System.out.println("doUpdate(conn,sql)" + conn.toString());
 		int retVal = 0;
 		try {
 			retVal = conn.createStatement().executeUpdate(sql);
