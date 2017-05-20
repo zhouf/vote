@@ -63,9 +63,9 @@ public class InitServlet extends HttpServlet {
     	List<String> retList = new ArrayList<String>();
     	InputStream is = getClass().getResourceAsStream("/../init.sql");
     	
-    	BufferedReader reader = new BufferedReader(new InputStreamReader(is));
     	String line;
     	try {
+    		BufferedReader reader = new BufferedReader(new InputStreamReader(is,"utf-8"));
 			while((line=reader.readLine()) != null){
 				//System.out.println(line);
 				if(line.length()>0 && !line.startsWith("#")){
